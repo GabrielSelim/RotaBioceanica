@@ -1,0 +1,2 @@
+ALTER TABLE `cartas_pokemon`
+ADD COLUMN `situacao` VARCHAR(1) NOT NULL DEFAULT 'A';

@@ -1,0 +1,148 @@
+.pessoaconta-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #00c6ff 100%);
+    padding-bottom: 2rem;
+}
+
+.pessoaconta-container {
+    background: #181c24;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+.pessoaconta-row,
+.pessoaconta-form-card,
+.pessoaconta-list-card {
+    color: #eaf6fb !important;
+}
+
+.pessoaconta-form-card, .pessoaconta-list-card {
+    background: #232b3a;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    border: none;
+}
+
+.pessoaconta-form-card h4,
+.pessoaconta-list-card h4 {
+    color: #00c6ff;
+}
+
+.pessoaconta-label {
+    color: #eaf6fb !important;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.pessoaconta-table th, .pessoaconta-table td {
+    vertical-align: middle;
+    background: #181c24;
+    color: #fff;
+    border-color: #232b3a;
+}
+
+.pessoaconta-table th {
+    background: #232b3a;
+    color: #00c6ff;
+    font-weight: 700;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+}
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .pessoaconta-container {
+        padding: 1rem;
+    }
+    .pessoaconta-form-card, .pessoaconta-list-card {
+        padding: 1rem;
+    }
+    .pessoaconta-table th, .pessoaconta-table td {
+        font-size: 0.95rem;
+        padding: 0.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .pessoaconta-bg {
+        padding: 0.5rem;
+    }
+    .pessoaconta-container {
+        padding: 0.5rem;
+    }
+    .pessoaconta-form-card, .pessoaconta-list-card {
+        padding: 0.5rem;
+    }
+    .pessoaconta-table th, .pessoaconta-table td {
+        font-size: 0.88rem;
+        padding: 0.25rem;
+    }
+}
+
+.pessoaconta-table th,
+.pessoaconta-table td {
+    vertical-align: middle;
+    background: #181c24;
+    color: #fff;
+    border-color: #232b3a;
+}
+
+.pessoaconta-table th {
+    background: #232b3a;
+    color: #00c6ff;
+    font-weight: 700;
+}
+
+.pessoaconta-table td .btn {
+    min-width: 32px;
+    min-height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.pessoaconta-table td .btn-success {
+    background: #198754;
+    border: none;
+}
+.pessoaconta-table td .btn-success:hover {
+    background: #157347;
+}
+
+.pessoaconta-table td .btn-warning {
+    background: #ffc107;
+    color: #232b3a;
+    border: none;
+}
+.pessoaconta-table td .btn-warning:hover {
+    background: #e0a800;
+    color: #232b3a;
+}
+
+.pessoaconta-table td .btn-danger {
+    background: #dc3545;
+    border: none;
+}
+.pessoaconta-table td .btn-danger:hover {
+    background: #bb2d3b;
+}
+
+.pessoaconta-table td .btn-secondary {
+    background: #6c757d;
+    border: none;
+}
+.pessoaconta-table td .btn-secondary:hover {
+    background: #565e64;
+}

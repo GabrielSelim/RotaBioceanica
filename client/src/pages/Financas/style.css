@@ -1,0 +1,80 @@
+.financas-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #00c6ff 100%);
+}
+
+.financas-container {
+    background: #181c24;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    max-width: 700px;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+}
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    color: #fff;
+}
+
+.financas-btns-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 540px;
+}
+
+.financas-btn-expl {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+}
+
+/* Explicação acima do botão */
+.financas-btn-expl .financas-explicacao {
+    order: -1;
+    margin-bottom: 0.3rem;
+    margin-top: 0;
+    background: #23283a;
+    color: #b3c0e0;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    padding: 0.8rem 1.1rem;
+    box-shadow: 0 2px 8px #0001;
+    line-height: 1.5;
+}
+
+.financas-btn-expl .btn {
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 1.1rem 1rem;
+    border-radius: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .financas-container {
+        padding: 1rem;
+    }
+    .financas-btns-list {
+        gap: 1.2rem;
+        max-width: 98vw;
+    }
+    .financas-btn-expl .btn {
+        font-size: 1rem;
+        padding: 0.75rem 0.5rem;
+    }
+    .financas-btn-expl .financas-explicacao {
+        font-size: 0.97rem;
+        padding: 0.7rem 0.7rem;
+        margin-bottom: 0.2rem;
+    }
+}

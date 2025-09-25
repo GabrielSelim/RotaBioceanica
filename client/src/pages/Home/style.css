@@ -1,0 +1,199 @@
+.main-bg {
+  min-height: 100vh;
+  padding: 3rem;
+  width: 100vw;
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #00c6ff 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-bottom: 90px;
+}
+
+.home-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent;
+  padding: 0;
+}
+
+.text-shadow {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.project-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 18px;
+  background: #181c24;
+  color: #fff;
+}
+.project-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+}
+
+.project-card-destaque {
+  border: 2.5px solid #00c6ff !important;
+  box-shadow: 0 0 0 4px #00c6ff, 0 12px 40px #00c6ff33, 0 8px 32px rgba(0,0,0,0.35) !important;
+  background: linear-gradient(120deg, #23283a 80%, #00c6ff22 100%);
+  position: relative;
+  z-index: 2;
+  transition: transform 0.22s, box-shadow 0.22s;
+}
+.project-card-destaque:hover {
+  transform: translateY(-10px) scale(1.045);
+  box-shadow: 0 0 0 8px #00c6ff, 0 16px 48px #00c6ff44, 0 12px 40px #00c6ff33;
+}
+
+.badge-destaque-projeto {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.45em 1.1em;
+  border-radius: 1.2em;
+  box-shadow: 0 2px 8px #00c6ff55;
+  letter-spacing: 1px;
+  z-index: 3;
+  border: 2px solid #fff;
+}
+
+/* ----------- CARD DE TECNOLOGIA COM BORDA RGB ANIMADA ----------- */
+.card.tech-card {
+  border-radius: 18px !important;
+  background: #181c24 !important;
+  color: #fff !important;
+  border: 4px solid transparent !important;
+  box-shadow: 0 2px 12px #00c6ff33 !important;
+  background-clip: padding-box, border-box !important;
+  background-origin: padding-box, border-box !important;
+  background:
+    #181c24 padding-box,
+    linear-gradient(270deg, #00c6ff, #00c6ff, #00c6ff, #00c6ff, #00c6ff, #00c6ff, #00c6ff) border-box !important;
+  transition: box-shadow 0.2s, border 0.2s, background 0.2s, background-position 0.2s, background-size 0.2s !important;
+  position: relative; /* Garante que a borda seja exibida corretamente */
+  overflow: visible;
+}
+
+.card.tech-card:hover {
+  background:
+    #181c24 padding-box,
+    linear-gradient(270deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000) border-box !important;
+  background-size: 200% 200% !important;
+  background-position: 0% 50%, 100% 50% !important;
+  background-clip: padding-box, border-box !important;
+  background-origin: padding-box, border-box !important;
+  border: 4px solid transparent !important;
+  box-shadow: 0 4px 24px #00c6ff55 !important;
+  animation: border-rainbow-move 3s linear infinite !important;
+}
+
+@keyframes border-rainbow-move {
+  0% {
+    background-position: 0% 50%, 0% 50%;
+  }
+  100% {
+    background-position: 0% 50%, 200% 50%;
+  }
+}
+/* ----------- FIM DO NOVO ----------- */
+
+@media (max-width: 768px) {
+  .main-bg {
+    padding: 1rem 0 110px 0;
+  }
+  .home-container {
+    padding: 1rem 0.5rem;
+  }
+  .rounded-circle {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .tech-card img {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .project-card-destaque {
+    box-shadow: 0 0 0 2px #00c6ff, 0 8px 24px #00c6ff33, 0 4px 16px rgba(0,0,0,0.25) !important;
+  }
+  .badge-destaque-projeto {
+    top: 10px;
+    left: 10px;
+    font-size: 0.93rem;
+    padding: 0.35em 0.8em;
+  }
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+  color: #fff;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+}
+
+.modal-backdrop {
+  opacity: 0.7 !important;
+}
+
+.github-btn {
+  position: absolute;
+  top: 18px;
+  right: 32px;
+  background: linear-gradient(90deg, #24292f 60%, #0366d6 100%);
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  border: 2px solid #fff;
+  transition: transform 0.15s, box-shadow 0.15s;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.github-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 4px 24px #0366d6;
+  border-color: #0366d6;
+  background: linear-gradient(90deg, #0366d6 0%, #24292f 100%);
+}
+.github-btn img {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 2px #0366d6);
+}
+
+.pokemon-zoom {
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+  cursor: zoom-in;
+}
+.pokemon-zoom.active {
+  transform: scale(2);
+  z-index: 10;
+  box-shadow: 0 8px 40px #00c6ff99;
+  cursor: zoom-out;
+}
+
+@media (max-width: 600px) {
+  .github-btn {
+    top: 10px;
+    right: 10px;
+    padding: 6px;
+  }
+}

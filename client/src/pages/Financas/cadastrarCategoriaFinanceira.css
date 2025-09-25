@@ -1,0 +1,102 @@
+.categoria-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #00c6ff 100%);
+    padding-bottom: 2rem;
+}
+
+.categoria-container {
+    background: #181c24;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+.categoria-row,
+.categoria-form-card,
+.categoria-list-card {
+    color: #eaf6fb !important;
+}
+
+.categoria-form-card, .categoria-list-card {
+    background: #232b3a;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    border: none;
+}
+
+.categoria-form-card h4,
+.categoria-list-card h4 {
+    color: #00c6ff;
+}
+
+.categoria-label {
+    color: #eaf6fb !important;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.categoria-table th, .categoria-table td {
+    vertical-align: middle;
+    background: #181c24;
+    color: #fff;
+    border-color: #232b3a;
+}
+
+.categoria-table th {
+    background: #232b3a;
+    color: #00c6ff;
+    font-weight: 700;
+}
+
+.categoria-table .badge.bg-success {
+    background: linear-gradient(90deg, #00c6ff 0%, #38e1a8 100%);
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.categoria-table .badge.bg-danger {
+    background: linear-gradient(90deg, #ff4e50 0%, #f9d423 100%);
+    color: #222;
+    font-size: 0.95rem;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+}
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .categoria-container {
+        padding: 1rem;
+    }
+    .categoria-form-card, .categoria-list-card {
+        padding: 1rem;
+    }
+    .categoria-table th, .categoria-table td {
+        font-size: 0.95rem;
+        padding: 0.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .categoria-bg {
+        padding: 0.5rem;
+    }
+    .categoria-container {
+        padding: 0.5rem;
+    }
+    .categoria-form-card, .categoria-list-card {
+        padding: 0.5rem;
+    }
+    .categoria-table th, .categoria-table td {
+        font-size: 0.88rem;
+        padding: 0.25rem;
+    }
+}

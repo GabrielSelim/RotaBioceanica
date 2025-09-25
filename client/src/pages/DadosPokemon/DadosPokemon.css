@@ -1,0 +1,84 @@
+.dados-pokemon-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #00c6ff 100%);
+    padding-bottom: 2rem;
+}
+
+.dados-pokemon-table {
+    min-width: 900px; /* Garante largura mínima para rolagem */
+
+    background: #181c24;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.dados-pokemon-table th,
+.dados-pokemon-table td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sticky-col {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: #232b3a !important;
+    color: #fff !important;
+}
+
+.th-dificuldade {
+    background: #bdbdbd !important;
+    color: #222 !important;
+    font-weight: bold;
+}
+
+.th-total {
+    background: #e0e0e0 !important;
+    color: #222 !important;
+}
+
+.th-booster-1 { background: #c800ff22 !important; color: #fff; }   /* Mewtwo - roxo */
+.th-booster-2 { background: #ffe066 !important; color: #222; }     /* Pikachu - amarelo */
+.th-booster-3 { background: #d2691e !important; color: #fff; }     /* Charizard - laranja/marrom */
+.th-booster-4 { background: #0bec70 !important; color: #fff; }    /*Mew*/
+.th-booster-5 { background: #1976d2 !important; color: #222; }     /* Dialga */
+.th-booster-6 { background: #ce00d5 !important; color: #fff; }    /* Palkia */
+.th-booster-7 { background: #c9af06 !important; color: #fff; }    /* Arceus */
+.th-booster-8 { background: #ff7d03 !important; color: #fff; }    /* Shinny Charizard */
+.th-booster-9 { background: #7b746b !important; color: #fff; }    /* Solgaleo */
+.th-booster-10 { background: #5303d3 !important; color: #fff; }   /* Lunala */
+.th-booster-0 { background: #dfdcdc !important; color: #fff; }    /* Qualquer */
+
+@media (max-width: 900px) {
+        .dados-pokemon-table {
+        font-size: 0.92rem;
+        min-width: 700px;
+    }
+    .dados-pokemon-table th,
+    .dados-pokemon-table td {
+        font-size: 0.92rem;
+        padding: 0.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .dados-pokemon-bg {
+        padding: 0.5rem;
+    }
+    .dados-pokemon-table {
+        font-size: 0.85rem;
+        min-width: 600px;
+    }
+    .dados-pokemon-table th,
+    .dados-pokemon-table td {
+        font-size: 0.8rem;
+        padding: 0.2rem;
+    }
+}
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}

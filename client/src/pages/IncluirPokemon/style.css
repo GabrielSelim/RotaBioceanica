@@ -1,0 +1,158 @@
+.incluir-pokemon-bg {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #00c6ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.incluir-pokemon-center {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.incluir-pokemon-card {
+    max-width: 720px; /* aumente o card */
+    width: 98vw;
+    border-radius: 18px;
+    background: rgba(24,28,36,0.97);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 32px #00c6ff22;
+    padding: 2.2rem 2.2rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 900px) {
+    .incluir-pokemon-card {
+        max-width: 98vw;
+        padding: 1.2rem 1vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .incluir-pokemon-card {
+        max-width: 99vw;
+        padding: 1.2rem 2vw;
+        margin: 1rem 0;
+    }
+    .incluir-pokemon-bg,
+    .incluir-pokemon-center {
+        padding: 0.5rem;
+    }
+    .regra-bloco {
+        padding: 0.7rem 0.5rem;
+    }
+}
+
+/* Regra bloco mais sutil */
+.regra-bloco {
+    background: rgba(0,198,255,0.06);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 8px #00c6ff11;
+}
+
+/* Título da regra mais discreto */
+.regra-titulo {
+    color: #00c6ff;
+    font-weight: 700;
+    font-size: 1.08rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    display: block;
+    box-shadow: none;
+}
+
+.regra-exemplos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.regra-exemplo {
+    display: flex;
+    flex-direction: column;
+    background: #181c24;
+    border-radius: 6px;
+    padding: 0.5rem 0.8rem;
+    color: #b8e0ff;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    word-break: break-all;
+}
+
+.regra-exemplo code {
+    background: #232b3a;
+    color: #00c6ff;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.97em;
+    margin-top: 2px;
+    word-break: break-all;
+}
+
+.regra-detalhes {
+    color: #b8e0ff;
+    font-size: 0.97rem;
+    margin-top: 0.5rem;
+    background: #181c24;
+    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+}
+
+.incluir-pokemon-card .form-control {
+    background: #181c24;
+    color: #fff;
+    border: 1px solid #00c6ff;
+}
+
+.incluir-pokemon-card .form-control:focus {
+    border-color: #0072ff;
+    box-shadow: 0 0 0 0.15rem #00c6ff44;
+}
+
+.incluir-pokemon-card .btn-primary {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+}
+
+.incluir-pokemon-card .btn-primary:hover,
+.incluir-pokemon-card .btn-primary:focus {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+}
+
+.alert-success {
+    background: #1e5631;
+    color: #b8ffb8;
+    border: none;
+}
+
+.alert-danger {
+    background: #5a1e1e;
+    color: #ffb8b8;
+    border: none;
+}
+
+.dicas-bloco {
+    color: #b8e0ff !important;
+    background: rgba(0,198,255,0.07);
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+}

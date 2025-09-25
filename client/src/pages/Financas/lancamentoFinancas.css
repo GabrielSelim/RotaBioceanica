@@ -1,0 +1,230 @@
+/* ...seu código existente... */
+
+/* Ajuste para cor dos títulos dos filtros */
+.lancamento-filtros-row label,
+.lancamento-filtros-row .form-label {
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Se estiver usando tema claro/escuro com classe no body */
+body:not(.dark) .lancamento-filtros-row label,
+body:not(.dark) .lancamento-filtros-row .form-label {
+    color: #558be9;
+}
+
+body.dark .lancamento-filtros-row label,
+body.dark .lancamento-filtros-row .form-label {
+    color: #fff;
+}
+
+/* ...restante do seu CSS... */
+
+.lancamento-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #00c6ff 100%);
+    padding-bottom: 40px;
+}
+
+.lancamento-filtros-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: end;
+    margin-bottom: 1.5rem;
+}
+
+.lancamento-filtros-row > .lancamento-filtro-col {
+    flex: 1 1 180px;
+    min-width: 160px;
+    max-width: 260px;
+}
+
+.lancamento-filtros-row .lancamento-filtro-col-date {
+    min-width: 140px;
+    max-width: 180px;
+}
+
+.lancamento-filtros-row .lancamento-filtro-col-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 160px;
+    max-width: 200px;
+}
+
+.lancamento-container {
+    background: rgba(24, 28, 36, 0.97);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    max-width: 1200px;
+    padding: 2rem 2.5rem;
+}
+
+.lancamento-table th, .lancamento-table td {
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+.lancamento-table th {
+    background: #181c24;
+    color: #fff;
+    border-top: none;
+}
+
+.lancamento-table tr {
+    background: #232a36;
+    color: #fff;
+}
+
+.lancamento-table tr:nth-child(even) {
+    background: #1b212b;
+}
+
+.lancamento-table .bg-success,
+.lancamento-table .badge.bg-success {
+    background-color: #198754 !important;
+    color: #fff !important;
+}
+
+.lancamento-table .bg-danger,
+.lancamento-table .badge.bg-danger {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+.lancamento-table .bg-warning,
+.lancamento-table .badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #232a36 !important;
+}
+
+.lancamento-table .bg-dark {
+    background-color: #232a36 !important;
+    color: #fff !important;
+}
+
+.lancamento-table .text-success {
+    color: #198754 !important;
+}
+
+.lancamento-table .text-danger {
+    color: #dc3545 !important;
+}
+
+.lancamento-table .text-warning {
+    color: #ffc107 !important;
+}
+
+.lancamento-table .text-dark {
+    color: #232a36 !important;
+}
+
+.lancamento-table .btn {
+    min-width: 36px;
+    min-height: 36px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lancamento-table .btn svg {
+    vertical-align: middle;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 992px) {
+    .lancamento-filtros-row {
+        flex-direction: column;
+        gap: 0.3rem !important; /* Reduzido para tablets e celulares */
+    }
+    .lancamento-filtros-row > .lancamento-filtro-col,
+    .lancamento-filtros-row .lancamento-filtro-col-date,
+    .lancamento-filtros-row .lancamento-filtro-col-btns {
+        max-width: 100%;
+        min-width: 0;
+        flex: 1 1 120px;
+    }
+    .lancamento-filtros-row .lancamento-filtro-col-btns {
+        flex-direction: row;
+        gap: 0.3rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .lancamento-bg {
+        padding: 0.5rem !important;
+    }
+    .lancamento-filtros-row {
+        gap: 0.10rem !important; /* Bem pequeno em celulares */
+    }
+    .lancamento-filtros-row > .lancamento-filtro-col,
+    .lancamento-filtros-row .lancamento-filtro-col-date,
+    .lancamento-filtros-row .lancamento-filtro-col-btns {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        flex: 1 1 80px;
+    }
+    .lancamento-filtros-row button {
+        width: 100%;
+    }
+    .lancamento-filtros-row .lancamento-filtro-col-btns {
+        flex-direction: column;
+        gap: 0.10rem !important;
+    }
+    .lancamento-container {
+        padding: 1rem !important;
+    }
+    .lancamento-table th, .lancamento-table td {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
+    .lancamento-filtros-row input,
+    .lancamento-filtros-row select,
+    .lancamento-filtros-row button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .lancamento-container {
+        padding: 0.5rem !important;
+    }
+    .lancamento-table th, .lancamento-table td {
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+    .lancamento-bg {
+        padding: 0.2rem !important;
+    }
+    .lancamento-filtros-row {
+        gap: 0.05rem !important; /* Mínimo espaço entre filtros em telas muito pequenas */
+    }
+    .lancamento-filtros-row .lancamento-filtro-col-btns {
+        gap: 0.05rem !important;
+    }
+    .lancamento-filtros-row > .lancamento-filtro-col,
+    .lancamento-filtros-row .lancamento-filtro-col-date,
+    .lancamento-filtros-row .lancamento-filtro-col-btns {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        flex: 1 1 60px;
+    }
+    .lancamento-filtros-row input,
+    .lancamento-filtros-row select,
+    .lancamento-filtros-row button {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+    /* Modal responsivo */
+    .modal-dialog {
+        max-width: 95vw !important;
+        margin: 0.5rem auto;
+    }
+    .modal-content {
+        font-size: 0.95rem;
+    }
+}

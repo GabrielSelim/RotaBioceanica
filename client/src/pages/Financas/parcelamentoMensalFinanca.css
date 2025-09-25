@@ -1,0 +1,74 @@
+.parcelas-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #00c6ff 100%);
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.parcelas-container {
+    background: rgba(24, 28, 36, 0.97);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 2.5rem;
+}
+.parcelas-table th, .parcelas-table td {
+    vertical-align: middle;
+    font-size: 1rem;
+}
+.parcelas-table th {
+    background: #181c24;
+    color: #fff;
+    border-top: none;
+}
+.parcelas-table tr {
+    background: #232a36;
+    color: #fff;
+}
+.parcelas-table tr:nth-child(even) {
+    background: #1b212b;
+}
+.status-pago {
+    color: #28a745;
+    font-weight: bold;
+}
+.status-apagar {
+    color: #dc3545;
+    font-weight: bold;
+}
+@media (max-width: 992px) {
+    .parcelas-container {
+        padding: 1rem !important;
+    }
+}
+@media (max-width: 768px) {
+    .parcelas-bg {
+        padding: 0.5rem !important;
+    }
+    .parcelas-container {
+        padding: 1rem !important;
+    }
+    .parcelas-table th, .parcelas-table td {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
+}
+@media (max-width: 576px) {
+    .parcelas-container {
+        padding: 0.5rem !important;
+    }
+    .parcelas-table th, .parcelas-table td {
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+    .parcelas-bg {
+        padding: 0.2rem !important;
+    }
+    .modal-dialog {
+        max-width: 95vw !important;
+        margin: 0.5rem auto;
+    }
+    .modal-content {
+        font-size: 0.95rem;
+    }
+}

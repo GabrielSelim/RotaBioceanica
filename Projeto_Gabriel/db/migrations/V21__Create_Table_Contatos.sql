@@ -1,0 +1,8 @@
+CREATE TABLE `contatos` (
+    `id` BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `nome` VARCHAR(100) NOT NULL,
+    `email` VARCHAR(100) NOT NULL,
+    `mensagem` VARCHAR(1000) NOT NULL,
+    `dataContato` DATETIME NOT NULL,
+    `usuarioId` BIGINT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

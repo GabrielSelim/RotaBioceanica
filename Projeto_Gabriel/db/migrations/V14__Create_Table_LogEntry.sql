@@ -1,0 +1,10 @@
+CREATE TABLE `log_entries` (
+    `id` BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `DataHora` DATETIME NOT NULL,
+    `Nivel` VARCHAR(50) NOT NULL,
+    `Mensagem` TEXT NOT NULL,
+    `UserId` INT(11) NOT NULL,
+    `NomeUsuario` VARCHAR(255) NOT NULL,
+    `Detalhes` TEXT NULL,
+    `Origem` VARCHAR(255) NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+body.light, body.dark {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Evita rolagem lateral */
+}
+.navbar-brand img{
+    height: 3rem; /* Tamanho padrão */
+    max-height: 4rem; /* Limita o tamanho máximo */
+}
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+body, #root {
+    min-height: 100vh;
+    display: block;
+    flex-direction: column;
+}
+.main-content {
+    flex: unset; /* Ocupa todo o espaço disponível */
+    display: block;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+}
+
+.navbar {
+    margin-bottom: 0; /* Remove margens extras */
+    position: fixed; /* Fixe o Navbar no topo */
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Certifique-se de que o Navbar esteja acima de outros elementos */
+}
+
+/* Tema claro */
+body.light {
+    background: #ffffff;
+    color: #333;
+}
+
+/* Tema escuro */
+body.dark {
+    background: #333;
+    color: #f0f0f5;
+}
+
+/* Ajuste para o navbar e footer no tema escuro */
+body.dark .navbar,
+body.dark .footer {
+    background-color: #222; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+}
+
+/* Estilo padrão para campos de entrada */
+input, textarea {
+    font: 400 18px Roboto, sans-serif;
+    color: #333;
+    border: 1px solid #DCDCE6;
+    border-radius: 8px;
+    padding: 0 24px;
+    background-color: #fff; /* Fundo branco por padrão */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Tema claro */
+body.light input, body.light textarea {
+    background-color: #f9f9f9; /* Fundo levemente cinza */
+    color: #333; /* Texto escuro */
+    border-color: #dcdce6; /* Borda clara */
+}
+
+/* Tema escuro */
+body.dark input, body.dark textarea, body.dark select {
+    background-color: #444; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    border-color: #666; /* Borda escura */
+}
+
+button {
+    cursor: pointer;
+}
+
+form input {
+    width: 100%;
+    height: 60px;
+    color: #333333;
+    border: 1px solid #DCDCE6;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-top: 16px;
+}
+
+.button {
+    width: 100%;
+    height: 60px;
+    background: #251FC5;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s;
+}
+
+.button:hover {
+    filter: brightness(80%);
+}
+
+/* Responsividade para telas 4K (resoluções maiores que 2560px) */
+@media (min-width: 2560px) {
+    .home-container {
+        max-width: 1800px; /* Aumenta a largura máxima do contêiner */
+        padding: 4rem; /* Aumenta o padding interno */
+    }
+
+    .home-container h1 {
+        font-size: 3.5rem; /* Aumenta o tamanho do título */
+    }
+
+    .home-container p {
+        font-size: 2rem; /* Aumenta o tamanho do texto */
+        line-height: 2.5; /* Ajusta o espaçamento entre linhas */
+    }
+
+    .home-container ul li {
+        font-size: 1.8rem; /* Aumenta o tamanho do texto nos itens da lista */
+        padding: 2rem; /* Aumenta o padding interno */
+    }
+
+    .skill-logo {
+        width: 70px; /* Aumenta o tamanho dos ícones */
+        height: 70px;
+    }
+}
+
+/* Responsividade para telas grandes */
+@media (min-width: 1200px) {
+    .home-container {
+        max-width: 1200px; /* Aumenta a largura máxima do contêiner */
+        padding: 3rem; /* Aumenta o padding interno */
+    }
+
+    .home-container h1 {
+        font-size: 2.5rem; /* Aumenta o tamanho do título */
+    }
+
+    .home-container p {
+        font-size: 1.5rem; /* Aumenta o tamanho do texto */
+        line-height: 2; /* Ajusta o espaçamento entre linhas */
+    }
+
+    .home-container ul li {
+        font-size: 1.2rem; /* Aumenta o tamanho do texto nos itens da lista */
+        padding: 1.5rem; /* Aumenta o padding interno */
+    }
+
+    .skill-logo {
+        width: 50px; /* Aumenta o tamanho dos ícones */
+        height: 50px;
+    }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho base da fonte */
+        min-height: 120vh;
+    }
+
+    .navbar {
+        padding: 1rem; /* Reduz o padding do Navbar */
+    }
+
+    .navbar-brand img {
+        height: 40px; /* Reduz o tamanho do logo */
+    }
+
+    .footer-logo {
+        width: 30px; /* Reduz o tamanho dos ícones no Footer */
+        height: 30px;
+    }
+}
+@media (max-width: 360px) and (max-height: 740px) {
+    body {
+        min-height: 170vh;
+        background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    }
+}
+html {
+    font-size: 16px; /* Tamanho base padrão */
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 1.2rem; /* Aumenta o tamanho base em telas grandes */
+    }
+    .navbar-brand img {
+        height: 4rem; /* Aumenta o tamanho da logo */
+        max-height: 5rem; /* Limita o tamanho máximo */
+    }
+    .footer {
+        padding: 2rem 0;
+        font-size: 1.2rem;
+    }
+
+    img.footer-logo {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    html {
+        font-size: 1.4rem; /* Aumenta o tamanho base em telas grandes */
+    }
+    .navbar {
+        padding: 2rem 3rem;
+        font-size: 1.5rem;
+    }
+    .navbar-brand  span{
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand img {
+        height: 5rem; /* Aumenta ainda mais o tamanho da logo */
+        max-height: 6rem; /* Limita o tamanho máximo */
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .form-select, .btn {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        height: 3rem; /* Aumenta ainda mais a altura */
+    }
+    .footer {
+        padding: 3rem 0;
+        font-size: 1.5rem;
+    }
+
+    img.footer-logo {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}

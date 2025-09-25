@@ -1,0 +1,137 @@
+.contato-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #00c6ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.contato-card {
+  background: #181c24;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  max-width: 600px; /* Mais largo para desktop */
+  width: 100%;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.contato-title {
+  font-weight: bold;
+  color: #00c6ff;
+  text-align: center;
+}
+
+.contato-intro {
+  color: #b3c0e0;
+  font-size: 1.08rem;
+  text-align: center;
+}
+
+.form-label {
+  color: #b3c0e0;
+  font-weight: 500;
+}
+
+.form-control {
+  background: #23283a;
+  border: none;
+  border-radius: 0.7rem;
+  color: #fff;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px #0001;
+  resize: none;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 2px #00c6ff;
+  background: #23283a;
+  color: #fff;
+}
+.is-invalid {
+  border: 1.5px solid #ff4e4e !important;
+  box-shadow: 0 0 0 2px #ff4e4e55 !important;
+}
+.invalid-feedback {
+  color: #ff4e4e;
+  font-size: 0.97rem;
+  margin-top: 0.2rem;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.9rem 0;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #00c6ff44;
+}
+.btn-gradient:hover:enabled {
+  background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+}
+
+.alert {
+  font-size: 1.05rem;
+  border-radius: 0.7rem;
+  text-align: center;
+}
+
+.contato-extra {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.contato-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.contato-social-link {
+  color: #00c6ff;
+  font-size: 2rem;
+  transition: color 0.2s, transform 0.2s;
+}
+.contato-social-link:hover {
+  color: #fff;
+  transform: scale(1.15);
+}
+
+.contato-email-info {
+  color: #b3c0e0;
+  font-size: 1.01rem;
+}
+.contato-email-label {
+  font-weight: 500;
+}
+.contato-email-value {
+  color: #00c6ff;
+  font-weight: bold;
+  font-size: 1.08rem;
+}
+
+@media (max-width: 900px) {
+  .contato-card {
+    max-width: 98vw;
+    padding: 2rem 1rem 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato-card {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+}
