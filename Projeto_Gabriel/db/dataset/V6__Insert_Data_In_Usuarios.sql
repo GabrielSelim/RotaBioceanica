@@ -1,2 +1,0 @@
-﻿INSERT INTO `usuarios` (`user_name`, `password`, `full_name`, `refresh_token`, `refresh_token_expiry_time`) VALUES
-('gabriel', 'ceadb6bfc3e54298623d5017f85ad8532da5efc52c5aa0f26567da6b06cc47cb', 'GABRIEL SANZ SELIM DE SALES', 'h9lzVOoLlBoTbcQrh/e16/aIj+4p6C67lLdDbBRMsjE=', '2020-09-27 17:30:49');
